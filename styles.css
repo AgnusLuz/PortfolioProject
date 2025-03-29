@@ -324,7 +324,6 @@ section {
     color: rgb(28, 70, 207);
 }
 
-/* Responsividade para dispositivos menores */
 @media (max-width: 1024px) {
     .cabecalho h2 {
         font-size: 24px;
@@ -361,7 +360,7 @@ section {
     }
 }
 
-/* Responsividade para celulares */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
