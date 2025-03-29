@@ -1,291 +1,307 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-    *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
-    html{
+
+html {
     scroll-behavior: smooth;
 }
-    body{
+
+body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
-    list-style: none;
-    
-    background: linear-gradient(1deg,#070707, #5a2f9e, #070707);
-    }
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-        }
-    .cabecalho{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        color: white;
-        background: linear-gradient(135deg, #5a2f9e, #070707);
-        
-    }
-    .cabecalho h2{
-        padding: 10px;
-        width: 200px;
-        margin-left: 10px;
-        font-size: 30px;
-        color: rgb(252, 252, 252);
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-    .cabecalho h2 a {
-        font-family: "Kanit", sans-serif;
-        text-decoration: none; 
-        color: inherit; 
-    }
-    .cabecalho h2 a:hover{
-        color: #070707;
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.705);
-        transform: scale(1.3);
-    }
-    #menu{
-        width: 100%;
-        display: flex;
-        justify-content:end;
-        align-items: center;
-        }
-    ul,li{
-        padding: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        }
-    ul li a{
-        font-family: "Roboto Mono", monospace;
-        padding: 10px;
-        text-decoration: none;
-        color: inherit;
-        border-radius: 15px;
-        border: 2px solid;
-        box-shadow: 0 2px 10px rgba(28, 70, 207, 0.705);
-    }
-    ul li a:hover{
-        transform: scale(1.2);
-    } 
-    main{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 100px;
-        }
-        
-    section {
-        height: 100vh;
-        width: 100%;
-        scroll-snap-align: start;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-    
-    #apresentacao {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        }
-        
-        .eu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        }
-        
-        .texto {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        gap: 10px;
-        }
-        #icones{
-            padding: 0;
-            width: 80%;
-            display: flex;
-            justify-content: space-between;
-            text-shadow: 0 5px 10px rgb(0, 0, 0);
-            }
-        .fa-github:hover, .fa-linkedin:hover,  .fa-download:hover{
-            transform: scale(1.2);
-        }
-        .texto i{
-            font-size: 40px;
-            color: whitesmoke;
-            text-align: start;
-            }
-        
-        #apresentacao h1 {
-        font-size: 50px;
-        font-family: "Roboto Mono", monospace;
-        color: whitesmoke;
-        text-shadow: 0 5px 10px rgb(0, 0, 0);
-        }
-        #apresentacao h1:hover{
-        transform: scale(1.1);
-        }
-        .eu img{
-        width: 350px;
-        border-radius: 30px;
-        border: 2px solid rgba(154, 17, 218, 0.39);
-        box-shadow: 0 4px 50px rgba(28, 70, 207, 0.705);
-        }
-    .eu img:hover{
-        transform: scale(1.1);
-    }
-    .eu p{
-        font-size: 30px;
-        font-family: "Kanit", sans-serif; 
-        font-weight: 500;
-        color: rgb(43, 148, 209);
-        text-shadow: 0 5px 10px rgb(18, 42, 70);
-       }
-    .eu p:hover{
-        transform: scale(1.1);
-    }
-    
-    #sobreMim {
-        background: linear-gradient(1deg, #070707, #5a2f9e, #070707);
-    }
-    
-    .container {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .container h2 {
-        font-size: 40px;
-        font-family: "Roboto Mono", monospace;
-        color: whitesmoke;
-        text-shadow: 0 5px 10px rgb(0, 0, 0);
-        }
-    .container h2:hover{
-        transform: scale(1.1);
-    }
-    
-    .conteudo {
-        display: flex;
-        justify-content: center;
-        color: whitesmoke;
-        font-size: 20px;
-        font-family: "Kanit", sans-serif;
-        line-height: 1.6;
-        padding: 20px;
-        border-radius: 20px;
-        background: rgba(43, 148, 209, 0.1);
-        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
-        width: 70%;
-        text-align: center;
-        }
-    .conteudo:hover{
-        transform: scale(1.1);
-    }
-    #certificados, #projetos{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        font-family: "Kanit", sans-serif;
-        text-align: center;
-        line-height: 1.6;
-        color: whitesmoke;
-        text-shadow: 0 4px 10px black;
-        }
-    #certificados h2{
-        font-size: 30px;
-        }
-    .container-cards{
-        width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 30px;
+    background: linear-gradient(1deg, #070707, #5a2f9e, #070707);
 }
-    .card0, .card1{
-        padding: 20px;
-        width: 30%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        border: 1px solid black;
-        border-radius: 20px;
-        background: rgba(43, 148, 209, 0.1);
-        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
-       }
-    .card0:hover, .card1:hover{
-        transform: scale(1.1);
-    }
-    .card0 img{
-        width: 100px;
-    }
-    .card1 img{
-        width: 100px;
-        }
-    #projetos h3{
-        font-size: 30px;
-        ;}    
-    .card-coffee{
-        padding: 20px;
-        width: 40%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        border: 1px solid black;
-        border-radius: 20px;
-        background: rgba(43, 148, 209, 0.1);
-        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
-        } 
-    .card-coffee:hover{
-        transform: scale(1.1);
-    }
-    .card-coffee button{
-        all: unset;
-        cursor: pointer;
-        background: none;
-        border: none;
-        padding: 10px;
-        font: inherit;
-        font-family: "Roboto Mono", monospace;
-        border: 1px solid whitesmoke;
-        border-radius: 20px;
-        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.705);
-        }
-    .card-coffee button:hover{
-        transform: scale(1.1);
-    }
-    .card-coffee button a{
-        text-align: center;
-        text-decoration: none;
-        color: inherit;
-    }
-    .card-coffee img{
-        width: 80%;
-        border-radius: 30px;
-        }    
-#contato{
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(135deg, #5a2f9e, #070707);
+}
+
+.cabecalho h2 {
+    padding: 10px;
+    width: 200px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho h2 a {
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho h2 a:hover {
+    color: #070707;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.705);
+    transform: scale(1.3);
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+ul, li {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+ul li a {
+    font-family: "Roboto Mono", monospace;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 15px;
+    border: 2px solid;
+    box-shadow: 0 2px 10px rgba(28, 70, 207, 0.705);
+}
+
+ul li a:hover {
+    transform: scale(1.2);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apresentacao {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.eu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 260px;
+    gap: 10px;
+}
+
+#icones {
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0 5px 10px #000000;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-download:hover {
+    transform: scale(1.2);
+}
+
+.texto i {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: start;
+}
+
+#apresentacao h1 {
+    font-size: 50px;
+    font-family: "Roboto Mono", monospace;
+    color: whitesmoke;
+    text-shadow: 0 5px 10px #000000;
+}
+
+#apresentacao h1:hover {
+    transform: scale(1.1);
+}
+
+.eu img {
+    width: 350px;
+    position: absolute;
+    left: 500px;
+    border-radius: 30px;
+    border: 2px solid rgba(154, 17, 218, 0.39);
+    box-shadow: 0 4px 50px rgba(28, 70, 207, 0.705);
+}
+
+.eu img:hover {
+    transform: scale(1.1);
+}
+
+.eu p {
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #2b94d1;
+    text-shadow: 0 5px 10px rgb(18, 42, 70);
+}
+
+.eu p:hover {
+    transform: scale(1.1);
+}
+
+#sobreMim {
+    background: linear-gradient(1deg, #070707, #5a2f9e, #070707);
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container h2 {
+    font-size: 40px;
+    font-family: "Roboto Mono", monospace;
+    color: whitesmoke;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.container h2:hover {
+    transform: scale(1.1);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(27, 10, 90, 0.438);
+    box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+    width: 70%;
+    text-align: center;
+}
+
+.conteudo:hover {
+    transform: scale(1.1);
+}
+
+#certificados, #projetos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    color: whitesmoke;
+    text-shadow: 0 4px 10px black;
+}
+
+#certificados h2 {
+    font-size: 30px;
+}
+
+.container-cards {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.card0, .card1 {
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: rgba(43, 148, 209, 0.1);
+    box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+}
+
+.card0:hover, .card1:hover {
+    transform: scale(1.1);
+}
+
+.card0 img {
+    width: 100px;
+}
+
+.card1 img {
+    width: 100px;
+}
+
+#projetos h3 {
+    font-size: 30px;
+}
+
+.card-coffee {
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: rgba(43, 148, 209, 0.1);
+    box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+}
+
+.card-coffee:hover {
+    transform: scale(1.1);
+}
+
+.card-coffee img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+#contato {
     width: 100%;
     padding: 20px;
     position: relative;
@@ -293,15 +309,130 @@
     justify-content: center;
     align-items: center;
     bottom: 0px;
-    background: linear-gradient(135deg, rgba(90, 47, 158,0.5), rgba(0, 0, 0,0.5));
+    background: linear-gradient(135deg, rgba(90, 47, 158, 0.5), rgba(0, 0, 0, 0.5));
     box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
 }
-#contato li{
-color: whitesmoke;
-font-family: "Roboto Mono", monospace;
-font-size: 20px;
+
+#contato li {
+    color: whitesmoke;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
 }
-#contato i{
+
+#contato i {
     font-size: 25px;
     color: rgb(28, 70, 207);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 1024px) {
+    .cabecalho h2 {
+        font-size: 24px;
+    }
+
+    .texto {
+        left: 0;
+        gap: 15px;
+    }
+
+    .eu img {
+        width: 250px;
+    }
+
+    .eu p {
+        font-size: 22px;
+    }
+
+    .container h2 {
+        font-size: 28px;
+    }
+
+    .conteudo {
+        width: 90%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card0, .card1, .card-coffee {
+        width: 100%;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu {
+        justify-content: center;
+    }
+
+    ul li {
+        gap: 20px;
+    }
+
+    .texto {
+        left: 0;
+        gap: 5px;
+    }
+
+    .eu img {
+        width: 200px;
+    }
+
+    #apresentacao h1 {
+        font-size: 36px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .conteudo {
+        width: 95%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card0, .card1, .card-coffee {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho h2 {
+        font-size: 20px;
+    }
+
+    .eu img {
+        width: 150px;
+    }
+
+    .eu p {
+        font-size: 18px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card0, .card1, .card-coffee {
+        width: 100%;
+    }
 }
