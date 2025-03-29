@@ -9,7 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -25,6 +24,7 @@ body{
         flex-direction: column;
         position: fixed;
         top: 0;
+        z-index: 1000;
         }
     .cabecalho{
         width: 100%;
@@ -84,45 +84,177 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         }
-    #apresentacao {
-        margin-top: 150px;
+        
+    section {
+        height: 100vh;
+        width: 100%;
+        scroll-snap-align: start;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+    }
+    
+    #apresentacao {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 50px;
-        position: relative;
-    }
-    #apresentacao h3{
-        font-size: 50px;
-        font-family: "Roboto Mono", monospace;
-        color: whitesmoke;
-        text-shadow: 0 5px 10px rgb(0, 0, 0);
-        position: absolute;
-        top: 170px;
-        right: 40px;
-    }
-    .eu{
+        }
+        
+        .eu {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 60px;
+        }
+        
+        .texto {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+        }
+        #icones{
+            padding: 0;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.3 ease;
+            text-shadow: 0 5px 10px rgb(0, 0, 0);
+            }
+        .fa-github:hover, .fa-linkedin:hover,  .fa-download:hover{
+            transform: scale(1.2);
+        }
+        .texto i{
+            font-size: 40px;
+            color: whitesmoke;
+            text-align: start;
+            }
+        
+        #apresentacao h1 {
+        font-size: 50px;
+        font-family: "Roboto Mono", monospace;
+        color: whitesmoke;
+        text-shadow: 0 5px 10px rgb(0, 0, 0);
+        transition:transform 0.3 ease;
+        }
+        #apresentacao h1:hover{
+        transform: scale(1.1);
         }
     .eu img{
         width: 350px;
         border-radius: 30px;
         border: 2px solid rgba(154, 17, 218, 0.39);
         box-shadow: 0 4px 50px rgba(28, 70, 207, 0.705);
-        transition:transform 0.3 ease;
+        transition: 0.3 ease;
     }
     .eu img:hover{
         transform: scale(1.1);
     }
     .eu p{
         font-size: 30px;
-        font-family: "Roboto Mono", monospace;
+        font-family: "Kanit", sans-serif; 
         font-weight: 500;
-        color: rgb(12, 12, 105);
+        color: rgb(43, 148, 209);
         text-shadow: 0 5px 10px rgb(18, 42, 70);
+        transition: 0.3 ease;
+    }
+    .eu p:hover{
+        transform: scale(1.1);
+    }
+    
+    #sobreMim {
+        background: linear-gradient(1deg, #070707, #5a2f9e, #070707);
+    }
+    
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .container h2 {
+        font-size: 40px;
+        font-family: "Roboto Mono", monospace;
+        color: whitesmoke;
+        text-shadow: 0 5px 10px rgb(0, 0, 0);
+        transition: 0.3 ease;
+    }
+    .container h2:hover{
+        transform: scale(1.1);
+    }
+    
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        color: whitesmoke;
+        font-size: 20px;
+        font-family: "Kanit", sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(43, 148, 209, 0.1);
+        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+        width: 70%;
+        text-align: center;
+        transition: 0.3 ease;
+    }
+    .conteudo:hover{
+        transform: scale(1.1);
+    }
+    #certificados{
+        width: 80%;
+        display: flex;
+        justify-content: ;
+        flex-direction: column;
+         gap: 30px;
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        line-height: 1.6;
+        color: whitesmoke;
+        text-shadow: 0 4px 10px black;
+    }
+    .container-cards{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+}
+    .card0{
+        padding: 20px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background: rgba(43, 148, 209, 0.1);
+        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+        transition: 0.3 ease;
+        }
+    .card0:hover{
+        transform: scale(1.1);
+    }
+    .card0 img{
+        width: 100px;
+    }
+    .card1{
+        padding: 20px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background: rgba(43, 148, 209, 0.1);
+        box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
+        transition: 0.3 ease;
     }
