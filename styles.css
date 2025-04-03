@@ -301,7 +301,7 @@ section {
     border-radius: 30px;
 }
 
-#contato {
+footer {
     width: 100%;
     padding: 20px;
     position: relative;
@@ -313,153 +313,55 @@ section {
     box-shadow: 0 4px 20px rgba(28, 70, 207, 0.4);
 }
 
-#contato li {
+footer li {
     color: whitesmoke;
     font-family: "Roboto Mono", monospace;
     font-size: 20px;
 }
 
-#contato i {
+footer i {
     font-size: 25px;
     color: rgb(28, 70, 207);
 }
 
-@media (max-width: 1024px) {
-    .cabecalho h2 {
-        font-size: 24px;
-    }
-
-    .texto {
-        left: 0;
-        gap: 15px;
-    }
-
-    .eu img {
-        width: 250px;
-    }
-
-    .eu p {
-        font-size: 22px;
-    }
-
-    .container h2 {
-        font-size: 28px;
-    }
-
-    .conteudo {
-        width: 90%;
-    }
-
-    .container-cards {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .card0, .card1, .card-coffee {
-        width: 100%;
-    }
+.teste{
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    #menu {
-        justify-content: center;
-    }
-
-    ul li {
-        gap: 20px;
-    }
-
-    .texto {
-        left: 0;
-        gap: 5px;
-    }
-
-    .eu img {
-        width: 200px;
-    }
-
-    #apresentacao h1 {
-        font-size: 36px;
-    }
-
-    .container h2 {
-        font-size: 24px;
-    }
-
-    .conteudo {
-        width: 95%;
-    }
-
-    .container-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .card0, .card1, .card-coffee {
-        width: 100%;
-    }
+.teste h2{
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 0 5px 10px black;
 }
-
-@media (max-width: 480px) {
-    .cabecalho {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cabecalho h2 {
-        font-size: 20px;
-        margin-left: 0;
-    }
-
-    #menu {
-        justify-content: center;
-        width: 100%;
-    }
-
-    ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .texto {
-        left: 0;
-        gap: 5px;
-        text-align: center;
-    }
-
-    .eu {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .eu img {
-        width: 150px;
-        position: relative;
-        left: 0;
-    }
-
-    .eu p {
-        font-size: 18px;
-    }
-
-    .container h2 {
-        font-size: 20px;
-    }
-
-    .conteudo {
-        width: 100%;
-    }
-
-    .container-cards {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .card0, .card1, .card-coffee {
-        width: 100%;
-    }
+.meuContato{
+    width: auto;
+    height: 500px;
+   
+}
+.meuContato span{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.meuContato input{
+ font-size: 25px;
+}
+.meuContato .mensagem{
+    height: 300px;
+}
+.meuContato p{
+    text-align: center;
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: darkgrey;
+    border-radius: 3px;
+}
+.meuContato p:hover{
+    transform: scale(1.2);
 }
